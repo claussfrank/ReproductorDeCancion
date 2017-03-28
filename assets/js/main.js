@@ -16,13 +16,21 @@ window.onload = function() {
 function stopMusic(){
     cancion.load();
 }
+//retrocedemos la musica
 function backMusic(){
-  cancion.currentTime = 1;
+  cancion.currentTime -= 1;
 }
+//adelantamos la musica
 function endMusic() {
-  cancion.currentTime=75;
+  cancion.currentTime+=75;
 }
-cancion.ontimeupdate = function volumen(){
+function volumenMas(){
+  cancion.volume += 0.1;
+}
+function volumenMenos(){
+  cancion.volume -= 0.1;
+}
+/*cancion.ontimeupdate = function volumen(){
   var rango=document.getElementById("volumenTime")
   rango.value=cancion.currentTime+=1
-}
+}*/
