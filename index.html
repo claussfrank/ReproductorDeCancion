@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Reproductor </title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  </head>
+  <body style="background:#2196F3;
+                font-family: 'Cabin';
+                color:white">
+    <h1> Ed Sheeran_Thinking Out Loud </h1>
+    <div>
+      <audio id ="song">
+        <source src="assets/cancion.mp3" type="audio/mpeg">
+      </audio>
+      <table>
+      <button  id ="atras" onclick="backMusic()"> <img src ="assets/imagenes/bottonBack.png" width="30px"height="30px"alt=""> </button>
+      <button  id ="para" onclick="stopMusic()"> <img src ="assets/imagenes/bottonStop.png" width="30px"height="30px"alt=""> </button>
+      <button  id ="reproducir" onclick="playMusic()"> <img src ="assets/imagenes/bottonPlay.png" width="30px"height="30px"alt=""> </button>
+      <button id ="pausa" onclick="pausaMusic()"> <img src ="assets/imagenes/bottonPause.png" width="30px"height="30px"alt=""> </button>
+      <button id ="fin" onclick="endMusic()"> <img src ="assets/imagenes/bottonNext.png" width="30px"height="30px"alt=""> </button></br>
+
+    </table>
+    <br>
+      <table>
+
+      <tr><button id ="volumen" onclick="volumen()"> <img src ="assets/imagenes/bottonVolumen.png" width="30px"height="30px"alt=""> </button></tr>
+      <td><section id="volumeTime">
+        <input type="range" min="0" max="1" step="1" value="0"/>
+      </section></td>
+
+    </table>
+        <script src="assets/js/main.js"></script>
+    </div>
+  </body>
+</html>
